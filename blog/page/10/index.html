@@ -1,0 +1,707 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Nothing Impossible</title>
+  <meta name="author" content="Raecoo Cao">
+
+  
+  <meta name="description" content="这两天闲来没事,把以前一直想做却懒的做的表单验证库搞了一下,基本上已经成型能够投入使用了,其实网上已经有N多咱类似功能的库,但总感觉不如自己写的顺手,想怎么改怎么改! vForm是参考了几个不错的验证库后最终成型的. 看起来至少很符合我个人的胃口,零依赖,不喜欢依赖性强的东西 :-), &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://raecoo.github.com/blog/blog/page/10/">
+  <link href="/blog/favicon.png" rel="icon">
+  <link href="/blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/blog/javascripts/modernizr-2.0.js"></script>
+  <script src="/blog/javascripts/ender.js"></script>
+  <script src="/blog/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/blog/atom.xml" rel="alternate" title="Nothing Impossible" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/blog/">Nothing Impossible</a></h1>
+  
+    <h2>Focus on Web 2.0, Ruby on Rails, CoffeeScript, BDD … All of the Web Technologies.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/blog/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:raecoo.github.com/blog" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/blog/">Blog</a></li>
+  <li><a href="/blog/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2009/01/11/vform-javascript-form-validation-util/">vForm Javascript表单验证工具类</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-01-11T00:00:00+08:00" pubdate data-updated="true">Jan 11<span>th</span>, 2009</time>
+        
+         | <a href="/blog/2009/01/11/vform-javascript-form-validation-util/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>这两天闲来没事,把以前一直想做却懒的做的表单验证库搞了一下,基本上已经成型能够投入使用了,其实网上已经有N多咱类似功能的库,但总感觉不如自己写的顺手,想怎么改怎么改! vForm是参考了几个不错的验证库后最终成型的.</p>
+
+<p>看起来至少很符合我个人的胃口,零依赖,不喜欢依赖性强的东西 :-),全部验证功能一个JS搞定,哈哈&#8230;&#8230;.</p>
+
+<p><a href="http://www.flickr.com/photos/raecoo/4076063929/" title="Flickr 上 Raecoo 的 vform-javascript-validator-library-develop-by-raecoo"><img src="http://farm3.static.flickr.com/2622/4076063929_711b8afb0d.jpg" width="500" height="371" alt="vform-javascript-validator-library-develop-by-raecoo" /></a></p>
+
+<p>UPDATE: git clone git://github.com/raecoo/vform.git</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/12/28/add-hover-effect-for-all-html-tags/">为所有HTML标签添加Hover效果</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-12-28T00:00:00+08:00" pubdate data-updated="true">Dec 28<span>th</span>, 2008</time>
+        
+         | <a href="/blog/2008/12/28/add-hover-effect-for-all-html-tags/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>在制作网页时经常会用到onmouseover和onmouseout效果来改善用户体验，最常见的就是在指定Element中添加如下的代码来实现背景色的切换。</p>
+
+<pre><code>onmouseover='this.style.background=#666;' onmouseout="this.style.background=#fff;"</code></pre>
+
+
+<p>其实到达这个效果有两种方式：Javascript和CSS，上面提到是用JS来完成的，我个人更喜欢用CSS来解决类似问题。
+用CSS的hover来解决这个问题，不仅简单高效，关键是低侵入性，页面上不会写太多东西。例如在li上添加这个效果：</p>
+
+<pre><code>li {background:#fff;}
+li:hover {background:#666;}</code></pre>
+
+
+<p>这样的代码看起来简洁且方便日后维护，但也有一个问题就是在IE6下并不是所有HTML标签都支持hover这个属性，还好已经有人为IE做了这个Pacth，只需要添加一下就好了。
+Reference: <a href="http://www.xs4all.nl/~peterned/csshover.html">http://www.xs4all.nl/~peterned/csshover.html</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/12/27/custom-exceptions-in-merb/">Custom Exceptions in Merb</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-12-27T00:00:00+08:00" pubdate data-updated="true">Dec 27<span>th</span>, 2008</time>
+        
+         | <a href="/blog/2008/12/27/custom-exceptions-in-merb/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>在开发应用过程中难免需要根据实际情况自定义一些异常处理机制，这方面Merb已经将底部的架子为我们准备好了，我们只需要简单的在此基础上进行扩展就可以搞的很舒服。
+Merb默认生成的Application会提供一个Exception的Controller，并包含了两个样版异常NotFound和NotAcceptable。现在我们添加一个自定义的异常在这里，假定名称为NotExists，并为其创建对应的View。
+在Action中调用</p>
+
+<pre><code> def show
+product = Product.find(params[:id])
+raise NotExists unless product
+[...]
+end</code></pre>
+
+
+<p>这时会报错，称并不存在NotExists常量，Google了一下并没有找到合理的解释，直接看了Merb的源代码才发现，自定义异常不是这样的用法。</p>
+
+<p>在Merb里如果要自定义异常，需要将自定义异常继承自一个Merb自身已存的异常，比如这样</p>
+
+<pre><code>class NotExists &lt; Merb::ControllerExceptions::NotFound ; end</code></pre>
+
+
+<p>并且需要在使用该异常的Controller里进行声明（放在Application里自然会是一个不错的选择），再跑一下上面报错的程序应该就可以得到正确的结果啦~ BTW:为了这个我可查了好一会资料 ：）</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2008/12/27/custom-exceptions-in-merb/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/12/26/hack-truncate-in-ruby-187-compability-issue/">Hack Truncate in Ruby 1.8.7 Compability Issue</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-12-26T00:00:00+08:00" pubdate data-updated="true">Dec 26<span>th</span>, 2008</time>
+        
+         | <a href="/blog/2008/12/26/hack-truncate-in-ruby-187-compability-issue/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>add follows code into rails app environment.rb and restart the service</p>
+
+<h1>http://rails.lighthouseapp.com/projects/8994/tickets/867-undefined-method-length-for-enumerable</h1>
+
+<pre><code>
+class String
+  def chars
+    ActiveSupport::Multibyte::Chars.new(self)
+  end
+  alias_method :mb_chars, :chars
+end
+##
+module ActionView
+  module Helpers
+    module TextHelper
+      def truncate(text, length = 30, truncate_string = "...")
+        if text.nil? then return end
+        l = length - truncate_string.chars.to_a.size
+        (text.chars.to_a.size > length ? text.chars.to_a[0...l].join + truncate_string : text).to_s
+      end
+    end
+  end
+end</code></pre>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/12/25/process-base64-encode-in-ruby/">Process Base64 Encode in Ruby</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-12-25T00:00:00+08:00" pubdate data-updated="true">Dec 25<span>th</span>, 2008</time>
+        
+         | <a href="/blog/2008/12/25/process-base64-encode-in-ruby/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>在Ruby世界中,语言本身就支持标准的Base64编码实现,而且还有不止一种实现,一个是类库base64中提供的实现(使用时需要require),一个是Ruby基础数据类型Array提供的,可直接使用.具体使用方法如下:</p>
+
+<p>使用Array的实现</p>
+
+<pre><code>str = "imabase64encode"
+base64_str = [str].pack("m")
+original = base64_str.unpack("m") </code></pre>
+
+
+<p>使用Base64的实现</p>
+
+<pre><code>require "base64"
+enc   = Base64.encode64('Send reinforcements')
+plain = Base64.decode64(enc)</code></pre>
+
+
+<p>请注意方法pack(&#8216;m&#8217;)、unpack(&#8216;m&#8217;)以及encode64和decode64的用法</p>
+
+<p>建议使用Array方式的实现,在Ruby1.9中将会去除Base64这个类库 :)</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/12/25/http-authentication/">Http Authentication</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-12-25T00:00:00+08:00" pubdate data-updated="true">Dec 25<span>th</span>, 2008</time>
+        
+         | <a href="/blog/2008/12/25/http-authentication/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>some information about http authentication :</h2>
+
+<p>As for authentication, the HTTP protocol includes the basic access authentication and the digest access authentication protocols, which allow access to a Web page only when the user has provided the correct username and password. If the server requires such credential for granting access to a Web page, the browser requests them to the user; once obtained, the browser stores and uses them also for accessing subsequent pages, without requiring the user to provide them again. From the point of view of the user, the effect is the same as if cookies were used: username and password are only requested once, and from that point on the user is given access to the site. In the basic access authentication protocol, a combination of username and password is sent to the server in every browser request. This means that someone listening in on this traffic can simply read this information and store for later use. This problem is overcome in the digest access authentication protocol, in which the username and password are encrypted using a random nonce created by the server.</p>
+
+<p>see more <a href="http://en.wikipedia.org/wiki/Basic_access_authentication" target='_blank'>http://en.wikipedia.org/wiki/Basic_access_authentication</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/12/21/remove-wine_ies4linux-linux/">卸载Wine及ies4linux方法</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-12-21T00:00:00+08:00" pubdate data-updated="true">Dec 21<span>st</span>, 2008</time>
+        
+         | <a href="/blog/2008/12/21/remove-wine_ies4linux-linux/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>wine的卸载直接sudo aptitude purge wine
+ies4linux直接去家目录下把.ieslinux的目录直接删除就可以了。。
+卸载后在菜单栏还有残余的图表，直接去./home/yourdir/.locales/share/applications/下把wine这个目录直接删除。。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/12/21/custom-linux-shell-prompt/">修改Linux默认的Shell提示符</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-12-21T00:00:00+08:00" pubdate data-updated="true">Dec 21<span>st</span>, 2008</time>
+        
+         | <a href="/blog/2008/12/21/custom-linux-shell-prompt/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>平时使用本子工作时由于屏幕太小,就恨不能把能不显示的东西全部去掉,这样干起活来才舒服些,特别是在使用Shell时,Ubuntu默认提示符把绝对路径也显示出来,导致输入的命令总会有折行情况,还是按自己想法搞一下,去了这个绝对路径吧,反正还有pwd命令可以用 :)</p>
+
+<p>Linux系统终端提示符的特征由系统环境变量PS1定义。通过命令echo $PS1查看当前设置。</p>
+
+<p>PS1的值由一系列静态文本或\和转义字符序列组成，如:
+PS1=&#8221;\u@\H \w$ &#8221;</p>
+
+<p>比较有用的转义序列有：
+\a ASCII 响铃字符（也可以键入 \007）
+\d &#8220;Wed Sep 06&#8221; 格式的日期
+\e ASCII转义字符
+\h 主机名
+\H 完整的主机名
+\j 在此 shell 中通过按 ^Z 挂起的进程数
+\l 此 shell 的终端设备名（如 &#8220;ttyp1&#8221;）
+\n 换行符
+\r 回车符
+\s shell 的名称（如 &#8220;bash&#8221;）
+\t 24小时制时间
+\T 12小时制时间
+\@ 带有 am/pm 的 12 小时制时间
+\v bash 的版本（如 2.04）
+\V Bash 版本（包括补丁级别）
+\u 用户名
+\w 当前工作目录（绝对路径）
+\w 当前工作目录（basename）
+! 当前命令在历史缓冲区的位置
+\$ 如果当前用户是super user，则插入字符#；否则插入字符$
+\ 反斜杠
+[ 出现在不移动光标的字符序列之前
+] 出现在非打印字符之后
+\xxx 插入一个用三位数 xxx（用零代替未使用的数字，如 &#8220;\007&#8221;）表示的 ASCII 字符</p>
+
+<p>可以通过设置PS1变量使提示符成为彩色。在PS1中设置字符序列颜色的格式为：
+[\e[F;Bm]
+其中<code>F''为字体颜色，编号30~37；</code>B&#8221;为背景色，编号40~47。
+可通过&#8220;\e[0m&#8221;关闭颜色输出；特别的，当B为1时，将显示加亮加粗的文字，详细请看下面的颜色表与代码表。</p>
+
+<p>颜色表</p>
+
+<h2>前景 背景 颜色</h2>
+
+<p>30 40 黑色
+31 41 紅色
+32 42 綠色
+33 43 黃色
+34 44 藍色
+35 45 紫紅色
+36 46 青藍色
+37 47 白色</p>
+
+<h2>代码 意义</h2>
+
+<p>0 OFF
+1 高亮显示
+4 underline
+5 闪烁
+7 反白显示
+8 不可见</p>
+
+<p>如果想要设置终端提示符的样式只要把$PS1在~/.bahrc指定即可比，比如我的设置如下：
+PS1=&#8221;${debian_chroot:+($debian_chroot)}\u@\h\$&#8221;
+export PS1
+效果：
+[raecoo@laptop]$</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/12/17/upgrade-merb-cause-nothing-to-render/">Upgrade Merb Cause Nothing to Render</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-12-17T00:00:00+08:00" pubdate data-updated="true">Dec 17<span>th</span>, 2008</time>
+        
+         | <a href="/blog/2008/12/17/upgrade-merb-cause-nothing-to-render/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>今天看到Merb有版本更新就顺手更新了一下,正好要写一个关于RESTFul的小脚本,随即生成一个新的App,但不知道怎么搞的不管是手工生成的Controller还是用resource生成的资源都无法正确渲染内容.</p>
+
+<p>在测试过程中为Action添加了before,end过滤器,过滤器内中的日志反馈得知前置过滤器正确执行,后置过滤压根没反应,Action里的日志也一样默默无闻,郁闷,找了半天的原因,愣是没发现,后来直接上Maillist发现也有人提类似的问题.有人反馈是merb-action-args引起的问题.随即在dependencies.rb中将它注释掉,重启App发现OK了,问题确实在此.</p>
+
+<p>看起来这个小玩意还不完善,我也顺手把测试环境补在了Maillist里,希望社区尽快有相关的patch出来,以下是测试环境</p>
+
+<pre><code>Ubuntu 8.10
+ruby 1.8.7 (2008-08-11 patchlevel 72) [i486-linux]
+merb (1.0.6.1)
+merb-action-args(1.0.6.1)</code></pre>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/12/16/fix-chinese-in-flash-on-ubuntu/">Ubuntu下Flash中文显示为方块字</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-12-16T00:00:00+08:00" pubdate data-updated="true">Dec 16<span>th</span>, 2008</time>
+        
+         | <a href="/blog/2008/12/16/fix-chinese-in-flash-on-ubuntu/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>因为字体设置的缘故,网页中Flash的中文变成了方块字,Google后发现只要删除</p>
+
+<pre><code>/etc/fonts/conf.d/49-sansserif.conf</code></pre>
+
+
+<p>这个文件就OK了</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/blog/blog/page/11/">&larr; Older</a>
+    
+    <a href="/blog/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/blog/blog/page/9/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2010/05/30/migration-blog-to-jekyll-and-heroku/">Migration Blog to Jekyll and Heroku</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/05/29/code-highlight-test/">Code Highlight Test</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/05/21/dont-forget-the-id-column-in-query-with-select-option/">Don&#8217;t forget the id column in query with select option</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/05/08/install-ruby-oci8-on-snow-leopard/">install ruby-oci8 on snow leopard</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/04/26/string-truncate-in-php/">String truncate in PHP</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Raecoo Cao -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'raecoosblog';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

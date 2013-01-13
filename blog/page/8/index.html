@@ -1,0 +1,683 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Nothing Impossible</title>
+  <meta name="author" content="Raecoo Cao">
+
+  
+  <meta name="description" content="Ruby 中 “require”, “load” 和 “include” 有什么不同呢? “require” 和 “load” 用途是一致的, 用来加载指定类库, “include” 是用来 mix-in 模組.
+* “require” 可载入某个 a.rb 檔案, 且可以省略 ”.rb”. &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://raecoo.github.com/blog/blog/page/8/">
+  <link href="/blog/favicon.png" rel="icon">
+  <link href="/blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/blog/javascripts/modernizr-2.0.js"></script>
+  <script src="/blog/javascripts/ender.js"></script>
+  <script src="/blog/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/blog/atom.xml" rel="alternate" title="Nothing Impossible" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/blog/">Nothing Impossible</a></h1>
+  
+    <h2>Focus on Web 2.0, Ruby on Rails, CoffeeScript, BDD … All of the Web Technologies.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/blog/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:raecoo.github.com/blog" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/blog/">Blog</a></li>
+  <li><a href="/blog/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2009/04/01/require-load-include-extend-the-different-in-ruby/">Ruby中require,load,include以及extend的用途及区别</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-04-01T00:00:00+08:00" pubdate data-updated="true">Apr 1<span>st</span>, 2009</time>
+        
+         | <a href="/blog/2009/04/01/require-load-include-extend-the-different-in-ruby/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Ruby 中 “require”, “load” 和 “include” 有什么不同呢?</p>
+
+<p>“require” 和 “load” 用途是一致的, 用来加载指定类库, “include” 是用来 mix-in 模組.
+* “require” 可载入某个 a.rb 檔案, 且可以省略 ”.rb”. 而且它只会在第一次的時候加载, 若再次 “require” 时就会忽略</p>
+
+<pre><code> require 'a'
+a = A.new</code></pre>
+
+
+<ul>
+<li>“load” 和 “require” 一样但要用 a.rb 全名, 且每次一定都会重新加载</li>
+</ul>
+
+
+<pre><code> load 'a.rb'
+a = A.new</code></pre>
+
+
+<ul>
+<li>加载程序库的順序呢(类型 java class path)? Ruby 把這個路径存在 ”$:” 系統全局变量当中, 你可以借助RUBYLIB 或 ruby -I 来添加新的加载路径.</li>
+</ul>
+
+
+<pre><code> puts $:</code></pre>
+
+
+<ul>
+<li>“include” 用来 mix-in 某个模組, 可以减少代码量,更主要的是提高代码的复用</li>
+</ul>
+
+
+<pre><code> require 'webrick'
+include WEBrick
+//可以不用 server = WEBrick::HTTPServer.new(...)
+server = HTTPServer.new(...)</code></pre>
+
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2009/04/01/require-load-include-extend-the-different-in-ruby/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2009/03/24/merge-terminal-window-in-ubuntu-with-terminator/">Ubuntu下Terminal窗口合并</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-03-24T00:00:00+08:00" pubdate data-updated="true">Mar 24<span>th</span>, 2009</time>
+        
+         | <a href="/blog/2009/03/24/merge-terminal-window-in-ubuntu-with-terminator/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>平时写代码时既要跑测试，又要随时查看DB，还要在Shell里搞些其它小动作，至少需要开这么三个窗口，来回切换确实是费时费力，今天发现了个不错的东东，Terminator，可以把多个窗口集成起来，还可以自由对窗口进行分割，这点上有点像VIM，用起来不错，使用Ubuntu的朋友直接从源上安装就好了。上效果图：</p>
+
+<p><a href="http://www.flickr.com/photos/raecoo/4076817778/" title="Flickr 上 Raecoo 的 2009-03-24-183218_1024x718_scrot"><img src="http://farm3.static.flickr.com/2431/4076817778_920cc159ca.jpg" width="500" height="351" alt="2009-03-24-183218_1024x718_scrot" /></a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2009/03/18/need-public-signing-key/">Need Public Signing Key</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-03-18T00:00:00+08:00" pubdate data-updated="true">Mar 18<span>th</span>, 2009</time>
+        
+         | <a href="/blog/2009/03/18/need-public-signing-key/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><pre><code>gpg --keyserver keyserver.ubuntu.com --recv 5AFADBD4AA1C92B0
+gpg --export --armor 5AFADBD4AA1C92B0 | sudo apt-key add -</code></pre>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2009/03/06/8-advices-for-product-manager/">产品经理应该学习的8个建议</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-03-06T00:00:00+08:00" pubdate data-updated="true">Mar 6<span>th</span>, 2009</time>
+        
+         | <a href="/blog/2009/03/06/8-advices-for-product-manager/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>选自马化腾在腾讯产品峰会上关于产品设计和开发的内部讲座,值得学习一下.</p>
+
+<p>对产品经理的8个建议：
+1. 为产品设定优先级和先后顺序，做前期产品设计时一定要准备充分。
+2. 产品开发要由开发人员与产品经理共同参与，40%～50%左右的产品最终体验应该是由开发人员决定的。
+3. 较强的研发机制保证，产品迭代要快，快速实现，快速响应。
+4. 技术核心能力非可复制性强，让极致核心能力产生口碑。
+5. 关注高端用户、关注产品的硬指标，产品设计大气合理，赢得口碑。
+6. 要丰富自己的角色，做挑剔的用户，笨用户。
+7. 发现产品的不足，最简单的方法就是天天用自己的产品。
+8. 在局部、细小之处的创新要永不满足。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2009/02/25/twitter-client-for-gnome/">Twitter Client for Gnome</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-02-25T00:00:00+08:00" pubdate data-updated="true">Feb 25<span>th</span>, 2009</time>
+        
+         | <a href="/blog/2009/02/25/twitter-client-for-gnome/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>i like use client software for twitter,in windows i would choose twhirl, However, Ubuntu has not been useful on the client is still using Twitterfox, today, i found Mitter and try it,  Amazing, i like it simple, fast , easy and support chinese very good ~
+install go to <a href="http://code.google.com/p/mitter/">http://code.google.com/p/mitter/</a>.</p>
+
+<p><a href="http://www.flickr.com/photos/raecoo/4076064017/" title="Flickr 上 Raecoo 的 mitter"><img src="http://farm3.static.flickr.com/2473/4076064017_4a2385411a_o.png" width="484" height="488" alt="mitter" /></a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2009/02/20/install-ruby-on-rails-environment-on-ubuntu/">Install Ruby on Rails Environment on Ubuntu</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-02-20T00:00:00+08:00" pubdate data-updated="true">Feb 20<span>th</span>, 2009</time>
+        
+         | <a href="/blog/2009/02/20/install-ruby-on-rails-environment-on-ubuntu/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>install ruby on rails on ubuntu very easy, follow me:
+first,install ruby, rmagick and releated lib</p>
+
+<pre><code>sudo apt-get install libssl0.9.8 libssl0.9.8-dbg libssl-dev
+sudo apt-get install ruby libzlib-ruby rdoc ri irb ruby1.8-dev
+sudo apt-get install libopenssl-ruby libgd-ruby1.8 imagemagick
+sudo apt-get install libmagick9-dev ruby1.8-dev</code></pre>
+
+
+<p>next,install gem,the apt source rubygems too old,so i like make it by self</p>
+
+<pre><code>wget http://rubyforge.org/frs/download.php/45905/rubygems-1.3.1.tgz
+tar zxvf rubygems-1.3.1.tgz; cd rubygems-1.3.1
+sudo ruby setup.rb</code></pre>
+
+
+<p>ok,let&#8217;s install all of the common gems</p>
+
+<pre><code>sudo gem install rmagick
+sudo gem install rails merb
+sudo gem install ....</code></pre>
+
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2009/02/20/install-ruby-on-rails-environment-on-ubuntu/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2009/02/18/linux-command-collections/">常用Linux配置及命令</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-02-18T00:00:00+08:00" pubdate data-updated="true">Feb 18<span>th</span>, 2009</time>
+        
+         | <a href="/blog/2009/02/18/linux-command-collections/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>持续更新</h2>
+
+<p>编辑~/.bashrc,添加如下语句,即可拥有ll指令</p>
+
+<pre><code>alias ll='ls -l --color=auto'
+source ~/.bashrc
+</code></pre>
+
+
+<p>杀死指定端口进程</p>
+
+<pre><code>kill -9 $(netstat -tlnp|grep 1099|awk  '{print $7}'|awk -F '/' '{print $1}')</code></pre>
+
+
+<p>修改Terminal窗口大小与位置</p>
+
+<pre><code>gnome-terminal --geometry=110x20+50+200</code></pre>
+
+
+<p>Note: &#8211;geometry=width*height+x position+y position</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2009/02/18/linux-command-collections/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2009/02/18/deploy-rails-application-with-git-capistrano/">Deploy Rails Application With Git,capistrano</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-02-18T00:00:00+08:00" pubdate data-updated="true">Feb 18<span>th</span>, 2009</time>
+        
+         | <a href="/blog/2009/02/18/deploy-rails-application-with-git-capistrano/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>如下脚本仅具备最简单的部署操作,如需要其它操作可添加相应Task</p>
+
+<pre><code>default_run_options[:pty] = true
+set :application, "demo"
+set :repository, "git url is here"
+set :scm, "git"
+set :scm_passphrase, "scretpwd"
+set :branch, "master" # change branch is here
+set :deploy_via, :remote_cache
+role :web, "192.168.1.24"
+role :app, "192.168.1.24"
+set :deploy_to, "/path/to/#{application}"
+set :user, "root"
+set :password, "scretpwd"
+after 'deploy:symlink', 'deploy:symlink_cache'
+namespace :deploy do
+task :symlink_cache, :except =&gt; { :no_release =&gt; true } do
+run "/home/yay/delta/ror/branchs/#{application}/ln_files.sh"
+end
+task :restart do
+run "/home/yay/delta/ror/branchs/#{application}/restart.sh"
+end
+end</code></pre>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2009/02/16/vim-config-file/">VIM配置文件</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-02-16T00:00:00+08:00" pubdate data-updated="true">Feb 16<span>th</span>, 2009</time>
+        
+         | <a href="/blog/2009/02/16/vim-config-file/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>备份一下VIM配置文件</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2009/02/16/vim-config-file/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2009/02/16/install-rmagick-on-debian/">Install RMagick on Debian</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-02-16T00:00:00+08:00" pubdate data-updated="true">Feb 16<span>th</span>, 2009</time>
+        
+         | <a href="/blog/2009/02/16/install-rmagick-on-debian/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Run follows command in the shell</p>
+
+<pre><code>sudo apt-get install imagemagick librmagick-ruby libmagick9-dev
+sudo gem install rmagick</code></pre>
+
+
+<p>Check the installation results</p>
+
+<pre><code>irb -rubygems -r RMagick
+puts Magick::Long_version </code></pre>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/blog/blog/page/9/">&larr; Older</a>
+    
+    <a href="/blog/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/blog/blog/page/7/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2010/05/30/migration-blog-to-jekyll-and-heroku/">Migration Blog to Jekyll and Heroku</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/05/29/code-highlight-test/">Code Highlight Test</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/05/21/dont-forget-the-id-column-in-query-with-select-option/">Don&#8217;t forget the id column in query with select option</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/05/08/install-ruby-oci8-on-snow-leopard/">install ruby-oci8 on snow leopard</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/04/26/string-truncate-in-php/">String truncate in PHP</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Raecoo Cao -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'raecoosblog';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

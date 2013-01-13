@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>install ruby on rails environment on ubuntu - Nothing Impossible</title>
+  <meta name="author" content="Raecoo Cao">
+
+  
+  <meta name="description" content="install ruby on rails on ubuntu very easy, follow me:
+first,install ruby, rmagick and releated lib sudo apt-get install libssl0.9.8 libssl0.9.8-dbg &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://raecoo.github.com/blog/2009/02/20/install-ruby-on-rails-environment-on-ubuntu/">
+  <link href="/blog/favicon.png" rel="icon">
+  <link href="/blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/blog/javascripts/modernizr-2.0.js"></script>
+  <script src="/blog/javascripts/ender.js"></script>
+  <script src="/blog/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/blog/atom.xml" rel="alternate" title="Nothing Impossible" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/blog/">Nothing Impossible</a></h1>
+  
+    <h2>Focus on Web 2.0, Ruby on Rails, CoffeeScript, BDD … All of the Web Technologies.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/blog/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:raecoo.github.com/blog" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/blog/">Blog</a></li>
+  <li><a href="/blog/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Install Ruby on Rails Environment on Ubuntu</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-02-20T00:00:00+08:00" pubdate data-updated="true">Feb 20<span>th</span>, 2009</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>install ruby on rails on ubuntu very easy, follow me:
+first,install ruby, rmagick and releated lib</p>
+
+<pre><code>sudo apt-get install libssl0.9.8 libssl0.9.8-dbg libssl-dev
+sudo apt-get install ruby libzlib-ruby rdoc ri irb ruby1.8-dev
+sudo apt-get install libopenssl-ruby libgd-ruby1.8 imagemagick
+sudo apt-get install libmagick9-dev ruby1.8-dev</code></pre>
+
+
+<p>next,install gem,the apt source rubygems too old,so i like make it by self</p>
+
+<pre><code>wget http://rubyforge.org/frs/download.php/45905/rubygems-1.3.1.tgz
+tar zxvf rubygems-1.3.1.tgz; cd rubygems-1.3.1
+sudo ruby setup.rb</code></pre>
+
+
+<p>ok,let&#8217;s install all of the common gems</p>
+
+<pre><code>sudo gem install rmagick
+sudo gem install rails merb
+sudo gem install ....</code></pre>
+
+
+<!--more-->
+
+
+<p>the other way</p>
+
+<pre><code>apt-get -y install build-essential zlib1g zlib1g-dev libxml2 libxml2-dev libxslt-dev sqlite3 libsqlite3-dev locate git-core
+apt-get -y install curl wget
+apt-get -y install libmagick9-dev
+apt-get -y install ruby1.8-dev ruby1.8 ri1.8 rdoc1.8 irb1.8 libreadline-ruby1.8 libruby1.8 libopenssl-ruby
+ln -s /usr/bin/ruby1.8 /usr/bin/ruby
+ln -s /usr/bin/rdoc1.8 /usr/bin/rdoc
+ln -s /usr/bin/irb1.8 /usr/bin/irb
+ln -s /usr/bin/ri1.8 /usr/bin/ri
+curl http://de.mirror.rubyforge.org/rubygems/rubygems-1.3.1.tgz | tar -xzv
+cd rubygems-1.3.1 &amp;&amp; ruby setup.rb install
+cd .. &amp;&amp; rm -rf rubygems-1.3.1
+ln -s /usr/bin/gem1.8 /usr/local/bin/gem
+gem sources -a http://gems.github.com # add Github as a gem source, you won't regret it
+gem install rake nokogiri hpricot builder cheat daemons json uuid rmagick sqlite3-ruby fastthread rack</code></pre>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Raecoo Cao</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-02-20T00:00:00+08:00" pubdate data-updated="true">Feb 20<span>th</span>, 2009</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://raecoo.github.com/blog/2009/02/20/install-ruby-on-rails-environment-on-ubuntu/" data-via="" data-counturl="http://raecoo.github.com/blog/2009/02/20/install-ruby-on-rails-environment-on-ubuntu/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2009/02/18/linux-command-collections/" title="Previous Post: 常用Linux配置及命令">&laquo; 常用Linux配置及命令</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2009/02/25/twitter-client-for-gnome/" title="Next Post: twitter client for gnome">twitter client for gnome &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2010/05/30/migration-blog-to-jekyll-and-heroku/">Migration Blog to Jekyll and Heroku</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/05/29/code-highlight-test/">Code Highlight Test</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/05/21/dont-forget-the-id-column-in-query-with-select-option/">Don't forget the id column in query with select option</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/05/08/install-ruby-oci8-on-snow-leopard/">install ruby-oci8 on snow leopard</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/04/26/string-truncate-in-php/">String truncate in PHP</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Raecoo Cao -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'raecoosblog';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

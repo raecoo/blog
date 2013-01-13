@@ -1,0 +1,743 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Nothing Impossible</title>
+  <meta name="author" content="Raecoo Cao">
+
+  
+  <meta name="description" content="下面是使用Ruby通过Http请求读取del.icio.us的一个示例. require 'net/https'
+require "rexml/document"
+username = "" # your del.icio.us username
+password = "" # your del. &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://raecoo.github.com/blog/blog/page/11/">
+  <link href="/blog/favicon.png" rel="icon">
+  <link href="/blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/blog/javascripts/modernizr-2.0.js"></script>
+  <script src="/blog/javascripts/ender.js"></script>
+  <script src="/blog/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/blog/atom.xml" rel="alternate" title="Nothing Impossible" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/blog/">Nothing Impossible</a></h1>
+  
+    <h2>Focus on Web 2.0, Ruby on Rails, CoffeeScript, BDD … All of the Web Technologies.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/blog/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:raecoo.github.com/blog" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/blog/">Blog</a></li>
+  <li><a href="/blog/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/12/15/use-net_https-lib-post-http-request/">使用net/http发送请求</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-12-15T00:00:00+08:00" pubdate data-updated="true">Dec 15<span>th</span>, 2008</time>
+        
+         | <a href="/blog/2008/12/15/use-net_https-lib-post-http-request/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>下面是使用Ruby通过Http请求读取del.icio.us的一个示例.</p>
+
+<pre><code>require 'net/https'
+require "rexml/document"
+username = "" # your del.icio.us username
+password =  "" # your del.icio.us password
+resp = href = "";
+begin
+  http = Net::HTTP.new("api.del.icio.us", 443)
+  http.use_ssl = true
+  http.start do |http|
+    req = Net::HTTP::Get.new("/v1/tags/get", {"User-Agent" =>
+        "raecoo.com"})
+    req.basic_auth(username, password)
+    response = http.request(req)
+    resp = response.body
+  end
+  #  XML Document
+  doc = REXML::Document.new(resp)
+  # iterate over each element
+  doc.root.elements.each do |elem|
+    print elem.attributes['tag']  + " -> " +
+    elem.attributes['count'] + "\n"
+  end
+rescue SocketError
+  raise "Host " + host + " nicht erreichbar"
+rescue REXML::ParseException => e
+  print "error parsing XML " + e.to_s
+end
+</code></pre>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/12/14/fix-skype-no-sound-in-ubuntu-810/">解决Skype在Ubuntu下无声的方法</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-12-14T00:00:00+08:00" pubdate data-updated="true">Dec 14<span>th</span>, 2008</time>
+        
+         | <a href="/blog/2008/12/14/fix-skype-no-sound-in-ubuntu-810/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Ubuntu 用起来一直挺顺手,只是声卡独占也让人很是恶心,貌似8.10后有所改善.之前在8.04中Skype一直没法出声,昨天做了次升级,再加上一点点设置,现在Skype也能正常出声了,感觉不错.设置如下:
+系统声音设置:
+<a href="http://www.flickr.com/photos/raecoo/4076063833/" title="Flickr 上 Raecoo 的 screenshot-options"><img src="http://farm3.static.flickr.com/2602/4076063833_07f0239b21.jpg" width="500" height="323" alt="screenshot-options" /></a></p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2008/12/14/fix-skype-no-sound-in-ubuntu-810/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/12/09/controller-text-by-css/">Controller Text by Css</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-12-09T00:00:00+08:00" pubdate data-updated="true">Dec 9<span>th</span>, 2008</time>
+        
+         | <a href="/blog/2008/12/09/controller-text-by-css/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><pre><code>text-transform:uppercase;
+capitalize : 　将每个单词的第一个字母转换成大写，其余无转换发生
+uppercase : 　转换成大写
+lowercase : 　转换成小写
+</code></pre>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/11/20/comparison-of-common-command-with-rails-and-merb/">Comparison of Common Command With Rails and Merb</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-11-20T00:00:00+08:00" pubdate data-updated="true">Nov 20<span>th</span>, 2008</time>
+        
+         | <a href="/blog/2008/11/20/comparison-of-common-command-with-rails-and-merb/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://www.flickr.com/photos/raecoo/4076817294/" title="Flickr 上 Raecoo 的 command_rails_vs_merb"><img src="http://farm3.static.flickr.com/2553/4076817294_b2c49cb73a.jpg" width="500" height="191" alt="command_rails_vs_merb" /></a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/11/15/hide-firefox-popup-menu-2/">隐藏Firefox右键多余菜单</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-11-15T00:00:00+08:00" pubdate data-updated="true">Nov 15<span>th</span>, 2008</time>
+        
+         | <a href="/blog/2008/11/15/hide-firefox-popup-menu-2/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><pre><code>#context-back,
+#context-forward,
+#context-reload,
+#context-stop,
+#context-sep-stop,
+#context-bookmarkpage,
+#context-savepage,
+#context-sendpage,
+#context-sep-viewbgimage,
+#context-openlink,
+#context-sep-open,
+#context-bookmarklink,
+#context-sendlink,
+#context-sep-copyimage,
+#context-sendimage,
+#context-setWallpaper,
+#context-printpage,
+#context-smartsearch
+{ display: none !important; }</code></pre>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/11/10/install-merb-10-on-windows/">Install Merb 1.0 on Windows</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-11-10T00:00:00+08:00" pubdate data-updated="true">Nov 10<span>th</span>, 2008</time>
+        
+         | <a href="/blog/2008/11/10/install-merb-10-on-windows/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>早期的Merb在Windows上安装是件很恶心的事，缺这少那的，很是不爽，Merb 1.0也正式发布了，今天正好系统重做了一下，在干净的环境下试了一把，Merb 1.0可以正常安全与运行，相比之前版本的安装好些了，但也不省事，必要安装的Gem包还是一大堆，啥时候能和Rails一样安装Rails会自动把相关包一并安装啊，或许这就是Merb可定制化这样的特点对于我这个懒人的不适应吧！ :)</p>
+
+<p><strong>安装必要的Gem</strong></p>
+
+<pre><code>extlib
+erubis
+json_pure
+rspec
+rack
+mime-types
+thor
+ruby2ruby(ZenTest RubyInline sexp_processor ParseTree)
+templater(diff-lcs)
+haml
+mailfactory
+dm-core(addressable data_objects)
+dm-migrations
+dm-timestamps
+dm-aggregates
+dm-validations
+dm-sweatshop
+dm-types
+do_sqlite3</code></pre>
+
+
+<p>注意：括号里的gem是被附加安装的，可以不用手动安装</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2008/11/10/install-merb-10-on-windows/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/11/09/merb-10-released/">Merb 1.0 Released</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-11-09T00:00:00+08:00" pubdate data-updated="true">Nov 9<span>th</span>, 2008</time>
+        
+         | <a href="/blog/2008/11/09/merb-10-released/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><img style="float: left; margin-right: 12px; margin-bottom: 12px;" src="http://www.rubyinside.com/wp-content/uploads/2008/11/merb.png" alt="merb.png" width="137" height="55" /><a href="http://www.merbivore.com/">Merb</a> - a much heralded, highly flexible Ruby-based Web application framework - has <a href="http://brainspl.at/articles/2008/11/08/merb-1-0">reached version 1.0</a> after two years of development. Congratulations to Merb&#8217;s creator, Ezra Zygmuntowicz, and to the large group of associated developers (such as Yehuda Katz and Matt Aimonetti) who&#8217;ve kept adding features and pushed Merb forward to be a significant alternative to Rails.</p>
+
+<p>Ruby Inside has been some surveys for the past couple of months, and they still show that only 25% of Ruby Inside&#8217;s visitors have ever developed a Merb application. With the stability that the 1.0 release offers (older versions of Merb had a reputation - fair or not - for a constantly shifting API), it&#8217;s now a great time to give Merb a try. It&#8217;s also a great time to get into writing tutorials and documentation!</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2008/11/09/merb-10-released/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/11/09/flash10-no-sound-on-ubuntu/">Ubuntu中Flash 10无声音的解决方法</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-11-09T00:00:00+08:00" pubdate data-updated="true">Nov 9<span>th</span>, 2008</time>
+        
+         | <a href="/blog/2008/11/09/flash10-no-sound-on-ubuntu/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>原本安装的是Flash9但总会频繁的把Firefox给搞崩溃，无奈升成Flash10，结果今天Flash播放器又没声音了，搜索了一下发现运行如下命令后就恢复正常了，真是不错</p>
+
+<pre><code>asoundconf set-pulseaudio</code></pre>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/11/09/exclusive-sound-card-solution-for-ubuntu/">Ubuntu声卡独占方法</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-11-09T00:00:00+08:00" pubdate data-updated="true">Nov 9<span>th</span>, 2008</time>
+        
+         | <a href="/blog/2008/11/09/exclusive-sound-card-solution-for-ubuntu/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>停止Alsa-util</p>
+
+<pre><code>$ sudo /etc/init.d/alsa-utils stop</code></pre>
+
+
+<p>编辑配置文件</p>
+
+<pre><code>$ sudo gedit /var/lib/alsa/asound.state </code></pre>
+
+
+<p>将如下内容添加至文件顶部</p>
+
+<pre><code># This text should be added to the beginning of
+# /var/lib/alsa/asound.state. You only need to add
+# it once -- it is saved across reboots.
+pcm.asymed {
+type asym
+playback.pcm dmix
+capture.pcm dsnoop
+}
+pcm.default {
+type plug
+slave.pcm asymed
+}
+pcm.dmix {
+type dmix
+ipc_key 5678293
+ipc_key_add_uid yes
+slave {
+pcm 'hw:0,0'
+period_time 0
+period_size 128
+buffer_size 2048
+format S16_LE
+rate 48000
+}
+}
+pcm.dsnoop {
+type dsnoop
+ipc_key 5778293
+ipc_key_add_uid yes
+slave {
+pcm 'hw:0,0'
+period_time 0
+period_size 128
+buffer_size 2048
+format S16_LE
+rate 48000
+}
+}</code></pre>
+
+
+<p>重新启动声音服务</p>
+
+<pre><code>$ sudo /etc/init.d/alsa-utils start</code></pre>
+
+
+<p>点击Preferences->Sound菜单，将标签Device里的所有音效全部设置为ALSA，重启电脑。
+更改Pidgin音效为ESD方式，这下边听歌边IM都没问题了。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/11/09/change-mysql-characters-to-utf8/">Change Mysql Characters to Utf8</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-11-09T00:00:00+08:00" pubdate data-updated="true">Nov 9<span>th</span>, 2008</time>
+        
+         | <a href="/blog/2008/11/09/change-mysql-characters-to-utf8/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><pre><code>raecoo@laptop:~$ mysql -uroot -p
+mysql> show variables like 'character%';
++--------------------------+----------------------------+
+| Variable_name                 | Value                      |
++--------------------------+----------------------------+
+| character_set_client         | latin1                       |
+| character_set_connection  | latin1                       |
+| character_set_database    | latin1                       |
+| character_set_filesystem   | binary                     |
+| character_set_results        | latin1                       |
+| character_set_server        | latin1                       |
+| character_set_system       | latin1                       |
+| character_sets_dir            | /usr/share/mysql/charsets/ |
++--------------------------+----------------------------+</code></pre>
+
+
+<p>mysql default characters is latin1,so we need update it to utf8 by my.cnf.
+go to directory /etc/mysql/ and open the my.cnf config file,modify like this:</p>
+
+<pre><code>[client]
+default-character-set=utf8
+[mysqld]
+default-character-set=utf8
+init_connect='SET NAMES utf8' </code></pre>
+
+
+<p>then restart mysql server ,to see the results of the revised.</p>
+
+<pre><code>raecoo@laptop:~$ mysql -uroot -p
+mysql> show variables like 'character%';
++--------------------------+----------------------------+
+| Variable_name                 | Value                      |
++--------------------------+----------------------------+
+| character_set_client         | utf8                       |
+| character_set_connection  | utf8                       |
+| character_set_database    | utf8                       |
+| character_set_filesystem   | binary                     |
+| character_set_results        | utf8                       |
+| character_set_server        | utf8                       |
+| character_set_system       | utf8                       |
+| character_sets_dir            | /usr/share/mysql/charsets/ |
++--------------------------+----------------------------+</code></pre>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/blog/blog/page/12/">&larr; Older</a>
+    
+    <a href="/blog/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/blog/blog/page/10/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2010/05/30/migration-blog-to-jekyll-and-heroku/">Migration Blog to Jekyll and Heroku</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/05/29/code-highlight-test/">Code Highlight Test</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/05/21/dont-forget-the-id-column-in-query-with-select-option/">Don&#8217;t forget the id column in query with select option</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/05/08/install-ruby-oci8-on-snow-leopard/">install ruby-oci8 on snow leopard</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/04/26/string-truncate-in-php/">String truncate in PHP</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Raecoo Cao -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'raecoosblog';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
