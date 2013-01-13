@@ -4,7 +4,7 @@
   <title><![CDATA[Nothing Impossible]]></title>
   <link href="http://raecoo.github.com/blog/atom.xml" rel="self"/>
   <link href="http://raecoo.github.com/blog/"/>
-  <updated>2013-01-13T16:44:10+08:00</updated>
+  <updated>2013-01-13T16:54:14+08:00</updated>
   <id>http://raecoo.github.com/blog/</id>
   <author>
     <name><![CDATA[Raecoo Cao]]></name>
@@ -15,7 +15,7 @@
   
   <entry>
     <title type="html"><![CDATA[Migration Blog to Jekyll and Heroku]]></title>
-    <link href="http://raecoo.github.com/blog/2010/05/30/migration-blog-to-jekyll-and-heroku/"/>
+    <link href="http://raecoo.github.com/blog/2010/05/30/migration-blog-to-jekyll-and-heroku.html"/>
     <updated>2010-05-30T00:00:00+08:00</updated>
     <id>http://raecoo.github.com/blog/2010/05/30/migration-blog-to-jekyll-and-heroku</id>
     <content type="html"><![CDATA[<p>周末研究了一下Jekyll这个开源的静态博客生成系统, 感觉棒极了, 一直以来就希望将自己的网站迁移成一个全静态的平台下, 这样一来网站自身对部署环境依赖将进一步减少, 并且可以很方便的部署与备份.</p>
@@ -30,7 +30,7 @@
   
   <entry>
     <title type="html"><![CDATA[Code Highlight Test]]></title>
-    <link href="http://raecoo.github.com/blog/2010/05/29/code-highlight-test/"/>
+    <link href="http://raecoo.github.com/blog/2010/05/29/code-highlight-test.html"/>
     <updated>2010-05-29T00:00:00+08:00</updated>
     <id>http://raecoo.github.com/blog/2010/05/29/code-highlight-test</id>
     <content type="html"><![CDATA[<div>
@@ -57,7 +57,7 @@
   
   <entry>
     <title type="html"><![CDATA[Don't forget the id column in query with select option]]></title>
-    <link href="http://raecoo.github.com/blog/2010/05/21/dont-forget-the-id-column-in-query-with-select-option/"/>
+    <link href="http://raecoo.github.com/blog/2010/05/21/dont-forget-the-id-column-in-query-with-select-option.html"/>
     <updated>2010-05-21T00:00:00+08:00</updated>
     <id>http://raecoo.github.com/blog/2010/05/21/dont-forget-the-id-column-in-query-with-select-option</id>
     <content type="html"><![CDATA[<pre><code>>> >> g = Game.find(:all, :select=>'title').first
@@ -82,7 +82,7 @@
   
   <entry>
     <title type="html"><![CDATA[install ruby-oci8 on snow leopard]]></title>
-    <link href="http://raecoo.github.com/blog/2010/05/08/install-ruby-oci8-on-snow-leopard/"/>
+    <link href="http://raecoo.github.com/blog/2010/05/08/install-ruby-oci8-on-snow-leopard.html"/>
     <updated>2010-05-08T00:00:00+08:00</updated>
     <id>http://raecoo.github.com/blog/2010/05/08/install-ruby-oci8-on-snow-leopard</id>
     <content type="html"><![CDATA[<p>Download ruby-oci8-2.0.4.tar.gz from <a href="http://rubyforge.org/frs/?group_id=256">rubyforge</a>.</p>
@@ -116,7 +116,7 @@
   
   <entry>
     <title type="html"><![CDATA[String truncate in PHP]]></title>
-    <link href="http://raecoo.github.com/blog/2010/04/26/string-truncate-in-php/"/>
+    <link href="http://raecoo.github.com/blog/2010/04/26/string-truncate-in-php.html"/>
     <updated>2010-04-26T00:00:00+08:00</updated>
     <id>http://raecoo.github.com/blog/2010/04/26/string-truncate-in-php</id>
     <content type="html"><![CDATA[<pre><code>  function truncate($str,$len,$suffix = false) 
@@ -153,7 +153,7 @@
   
   <entry>
     <title type="html"><![CDATA[mysql explain的使用详解]]></title>
-    <link href="http://raecoo.github.com/blog/2010/04/02/introduction-explain-command-of-mysql/"/>
+    <link href="http://raecoo.github.com/blog/2010/04/02/introduction-explain-command-of-mysql.html"/>
     <updated>2010-04-02T00:00:00+08:00</updated>
     <id>http://raecoo.github.com/blog/2010/04/02/introduction-explain-command-of-mysql</id>
     <content type="html"><![CDATA[<p>EXPLAIN 解释：</p>
@@ -186,7 +186,7 @@ ALL:这个连接类型对于前面的每一个记录联合进行完全扫描，�
   
   <entry>
     <title type="html"><![CDATA[Debugger for Flash and AIR]]></title>
-    <link href="http://raecoo.github.com/blog/2010/03/27/debugger-for-flash-and-air/"/>
+    <link href="http://raecoo.github.com/blog/2010/03/27/debugger-for-flash-and-air.html"/>
     <updated>2010-03-27T00:00:00+08:00</updated>
     <id>http://raecoo.github.com/blog/2010/03/27/debugger-for-flash-and-air</id>
     <content type="html"><![CDATA[<p>introduction:
@@ -199,7 +199,7 @@ ALL:这个连接类型对于前面的每一个记录联合进行完全扫描，�
   
   <entry>
     <title type="html"><![CDATA[升级Leopard默认JDK版本至1.6]]></title>
-    <link href="http://raecoo.github.com/blog/2010/01/13/upgrade-leopard-java-to-1-6-x/"/>
+    <link href="http://raecoo.github.com/blog/2010/01/13/upgrade-leopard-java-to-1-6-x.html"/>
     <updated>2010-01-13T00:00:00+08:00</updated>
     <id>http://raecoo.github.com/blog/2010/01/13/upgrade-leopard-java-to-1-6-x</id>
     <content type="html"><![CDATA[<ol>
@@ -224,7 +224,7 @@ ALL:这个连接类型对于前面的每一个记录联合进行完全扫描，�
   
   <entry>
     <title type="html"><![CDATA[Ruby中的日期格式化]]></title>
-    <link href="http://raecoo.github.com/blog/2009/12/27/format-date-in-ruby/"/>
+    <link href="http://raecoo.github.com/blog/2009/12/27/format-date-in-ruby.html"/>
     <updated>2009-12-27T00:00:00+08:00</updated>
     <id>http://raecoo.github.com/blog/2009/12/27/format-date-in-ruby</id>
     <content type="html"><![CDATA[<p>  %a - The abbreviated weekday name (<code>Sun'')
@@ -254,7 +254,7 @@ ALL:这个连接类型对于前面的每一个记录联合进行完全扫描，�
   
   <entry>
     <title type="html"><![CDATA[Translates Authlogic validates message]]></title>
-    <link href="http://raecoo.github.com/blog/2009/12/18/authlogic-validates-message-i18n/"/>
+    <link href="http://raecoo.github.com/blog/2009/12/18/authlogic-validates-message-i18n.html"/>
     <updated>2009-12-18T00:00:00+08:00</updated>
     <id>http://raecoo.github.com/blog/2009/12/18/authlogic-validates-message-i18n</id>
     <content type="html"><![CDATA[<pre><code>  authlogic:
@@ -284,7 +284,7 @@ ALL:这个连接类型对于前面的每一个记录联合进行完全扫描，�
   
   <entry>
     <title type="html"><![CDATA[使用Postfix, Courier及MySql构建自已的邮件服务器]]></title>
-    <link href="http://raecoo.github.com/blog/2009/12/09/using-postfix-with-courier-and-mysql-on-debian/"/>
+    <link href="http://raecoo.github.com/blog/2009/12/09/using-postfix-with-courier-and-mysql-on-debian.html"/>
     <updated>2009-12-09T00:00:00+08:00</updated>
     <id>http://raecoo.github.com/blog/2009/12/09/using-postfix-with-courier-and-mysql-on-debian</id>
     <content type="html"><![CDATA[<p>本文将介绍如何在Ubuntu上运行Postfix邮件系统, 使用Courier提供IMAP/POP3(IMAPS and POP3S)服务, 并将虚拟域和用户数据保存于MySql中.</p>
@@ -589,7 +589,7 @@ https://help.ubuntu.com/community/Postfix</p>
   
   <entry>
     <title type="html"><![CDATA[在Rails应用中使用960.gs CSS框架]]></title>
-    <link href="http://raecoo.github.com/blog/2009/12/04/use-960-gs-on-rails-application/"/>
+    <link href="http://raecoo.github.com/blog/2009/12/04/use-960-gs-on-rails-application.html"/>
     <updated>2009-12-04T00:00:00+08:00</updated>
     <id>http://raecoo.github.com/blog/2009/12/04/use-960-gs-on-rails-application</id>
     <content type="html"><![CDATA[<p>本文介绍通过 <strong><a href="http://compass-style.org/">Compass</a></strong> 以 <strong><a href="http://sass-lang.com/">Sass</a></strong> 方式集成960.gs与Rails应用程序.</p>
@@ -618,7 +618,7 @@ $compass --rails -f 960 . --css-dir=public/stylesheets --sass-dir=app/sass -r ni
   
   <entry>
     <title type="html"><![CDATA[使用Fancy-Buttons制作漂亮的按钮]]></title>
-    <link href="http://raecoo.github.com/blog/2009/12/04/fancy-buttons/"/>
+    <link href="http://raecoo.github.com/blog/2009/12/04/fancy-buttons.html"/>
     <updated>2009-12-04T00:00:00+08:00</updated>
     <id>http://raecoo.github.com/blog/2009/12/04/fancy-buttons</id>
     <content type="html"><![CDATA[<p><a href="http://github.com/imathis/fancy-buttons"><img src="http://s3.imathis.com/dev/compass/fancy-buttons/demo.png" alt="Fancy Buttons" /></a></p>
@@ -644,7 +644,7 @@ $compass --rails -f 960 . --css-dir=public/stylesheets --sass-dir=app/sass -r ni
   
   <entry>
     <title type="html"><![CDATA[开启Safari的Web调试工具]]></title>
-    <link href="http://raecoo.github.com/blog/2009/12/01/enabled-web-development-tool-on-safari-4/"/>
+    <link href="http://raecoo.github.com/blog/2009/12/01/enabled-web-development-tool-on-safari-4.html"/>
     <updated>2009-12-01T00:00:00+08:00</updated>
     <id>http://raecoo.github.com/blog/2009/12/01/enabled-web-development-tool-on-safari-4</id>
     <content type="html"><![CDATA[<p>在终端内输入如下内容即可:</p>
@@ -669,7 +669,7 @@ $compass --rails -f 960 . --css-dir=public/stylesheets --sass-dir=app/sass -r ni
   
   <entry>
     <title type="html"><![CDATA[解决Passenger的Unexpected end-of- file detected异常]]></title>
-    <link href="http://raecoo.github.com/blog/2009/11/25/fix-passenger-the-application-spawner-exception/"/>
+    <link href="http://raecoo.github.com/blog/2009/11/25/fix-passenger-the-application-spawner-exception.html"/>
     <updated>2009-11-25T00:00:00+08:00</updated>
     <id>http://raecoo.github.com/blog/2009/11/25/fix-passenger-the-application-spawner-exception</id>
     <content type="html"><![CDATA[<p>今天在启动一个项目时出现了如下错误信息:</p>
@@ -691,7 +691,7 @@ Exception class:
   
   <entry>
     <title type="html"><![CDATA[Ruby收取Gmail邮件]]></title>
-    <link href="http://raecoo.github.com/blog/2009/11/24/use-ruby-retrieving-gmail-via-pop3/"/>
+    <link href="http://raecoo.github.com/blog/2009/11/24/use-ruby-retrieving-gmail-via-pop3.html"/>
     <updated>2009-11-24T00:00:00+08:00</updated>
     <id>http://raecoo.github.com/blog/2009/11/24/use-ruby-retrieving-gmail-via-pop3</id>
     <content type="html"><![CDATA[<p>Gmail的POP3需要用SSL方式才能访问, 今天写了段代码才发现,原来Ruby 1.8.6原生的POP3类库并不支持SSL, 换成1.8.7后就可以了, 看来应该把所有环境里的Ruby版本都进行一下升级了.</p>
@@ -731,7 +731,7 @@ end</code></pre>
   
   <entry>
     <title type="html"><![CDATA[使用Ruby解析图片EXIF数据获取坐标信息]]></title>
-    <link href="http://raecoo.github.com/blog/2009/11/23/get-gps-position-from-image-by-ruby/"/>
+    <link href="http://raecoo.github.com/blog/2009/11/23/get-gps-position-from-image-by-ruby.html"/>
     <updated>2009-11-23T00:00:00+08:00</updated>
     <id>http://raecoo.github.com/blog/2009/11/23/get-gps-position-from-image-by-ruby</id>
     <content type="html"><![CDATA[<p>最近在做一个项目时需要将图片EXIF信息解析出来并获取相应GPS坐标信息,用于在Google Map中使用, 找到了一些Ruby解析EXIF信息的类库, 相比之下还是 <a href="http://github.com/remvee/exifr">exifr</a>这个gem不错, 零依赖,直接ruby调用.</p>
@@ -829,7 +829,7 @@ latitude (degrees) = degrees + (minutes / 60) + (seconds / 3600)</code></pre>
   
   <entry>
     <title type="html"><![CDATA[安装FFMpeg]]></title>
-    <link href="http://raecoo.github.com/blog/2009/11/19/install-ffmpeg-on-centos/"/>
+    <link href="http://raecoo.github.com/blog/2009/11/19/install-ffmpeg-on-centos.html"/>
     <updated>2009-11-19T00:00:00+08:00</updated>
     <id>http://raecoo.github.com/blog/2009/11/19/install-ffmpeg-on-centos</id>
     <content type="html"><![CDATA[<p>FFMPEG是一个开放源代码的跨平台的流媒体解码程序, N多的软件都采用它做为解码核心, 貌似还有一个叫 FFMPEG耻辱名单的玩意, 是指一些个商业公司不遵守FFMPEG的发布协议. 但毕竟是开源产品没有过多的法律保护, 也只能靠自控解决.</p>
@@ -873,7 +873,7 @@ yum install ffmpeg ffmpeg-devel ffmpeg-libpostproc mencoder</code></pre>
   
   <entry>
     <title type="html"><![CDATA[基于gitosis创建新的版本仓库]]></title>
-    <link href="http://raecoo.github.com/blog/2009/11/19/create-new-repository-based-gitosis/"/>
+    <link href="http://raecoo.github.com/blog/2009/11/19/create-new-repository-based-gitosis.html"/>
     <updated>2009-11-19T00:00:00+08:00</updated>
     <id>http://raecoo.github.com/blog/2009/11/19/create-new-repository-based-gitosis</id>
     <content type="html"><![CDATA[<p>在此以添加一个名为VOD的版本库为例:</p>
@@ -910,7 +910,7 @@ $git push origin master:refs/heads/master</code></pre>
   
   <entry>
     <title type="html"><![CDATA[开源软件的国内镜像站点]]></title>
-    <link href="http://raecoo.github.com/blog/2009/11/09/open-source-mirrors-in-china/"/>
+    <link href="http://raecoo.github.com/blog/2009/11/09/open-source-mirrors-in-china.html"/>
     <updated>2009-11-09T00:00:00+08:00</updated>
     <id>http://raecoo.github.com/blog/2009/11/09/open-source-mirrors-in-china</id>
     <content type="html"><![CDATA[<p>网易镜像 <a href="http://mirrors.163.com/" target='_blank'>http://mirrors.163.com/</a>

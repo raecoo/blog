@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>install Merb 1.0 on Windows - Nothing Impossible</title>
+  <meta name="author" content="Raecoo Cao">
+
+  
+  <meta name="description" content="早期的Merb在Windows上安装是件很恶心的事，缺这少那的，很是不爽，Merb 1.0也正式发布了，今天正好系统重做了一下，在干净的环境下试了一把，Merb 1.0可以正常安全与运行，相比之前版本的安装好些了，但也不省事，必要安装的Gem包还是一大堆， &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://raecoo.github.com/blog/2008/11/10/install-merb-10-on-windows.html">
+  <link href="/blog/favicon.png" rel="icon">
+  <link href="/blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/blog/javascripts/modernizr-2.0.js"></script>
+  <script src="/blog/javascripts/ender.js"></script>
+  <script src="/blog/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/blog/atom.xml" rel="alternate" title="Nothing Impossible" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/blog/">Nothing Impossible</a></h1>
+  
+    <h2>Focus on Web 2.0, Ruby on Rails, CoffeeScript, BDD … All of the Web Technologies.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/blog/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:raecoo.github.com/blog" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/blog/">Blog</a></li>
+  <li><a href="/blog/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Install Merb 1.0 on Windows</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-11-10T00:00:00+08:00" pubdate data-updated="true">Nov 10<span>th</span>, 2008</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>早期的Merb在Windows上安装是件很恶心的事，缺这少那的，很是不爽，Merb 1.0也正式发布了，今天正好系统重做了一下，在干净的环境下试了一把，Merb 1.0可以正常安全与运行，相比之前版本的安装好些了，但也不省事，必要安装的Gem包还是一大堆，啥时候能和Rails一样安装Rails会自动把相关包一并安装啊，或许这就是Merb可定制化这样的特点对于我这个懒人的不适应吧！ :)</p>
+
+<p><strong>安装必要的Gem</strong></p>
+
+<pre><code>extlib
+erubis
+json_pure
+rspec
+rack
+mime-types
+thor
+ruby2ruby(ZenTest RubyInline sexp_processor ParseTree)
+templater(diff-lcs)
+haml
+mailfactory
+dm-core(addressable data_objects)
+dm-migrations
+dm-timestamps
+dm-aggregates
+dm-validations
+dm-sweatshop
+dm-types
+do_sqlite3</code></pre>
+
+
+<p>注意：括号里的gem是被附加安装的，可以不用手动安装</p>
+
+<!--more-->
+
+
+<p><strong>安装Merb</strong></p>
+
+<pre><code>gem install merb -s http://edge.merbivore.com</code></pre>
+
+
+<p><strong>生成Merb应用</strong></p>
+
+<pre><code>merb-gen app merbtest</code></pre>
+
+
+<p><strong>启动应用</strong></p>
+
+<pre><code>cd merbtest_directory
+merb
+http://localhost:4000/</code></pre>
+
+
+<p>oh~yea!  可以看到绿色的Logo了</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Raecoo Cao</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-11-10T00:00:00+08:00" pubdate data-updated="true">Nov 10<span>th</span>, 2008</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://raecoo.github.com/blog/2008/11/10/install-merb-10-on-windows.html" data-via="" data-counturl="http://raecoo.github.com/blog/2008/11/10/install-merb-10-on-windows.html" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2008/11/09/merb-10-released.html" title="Previous Post: Merb 1.0 Released">&laquo; Merb 1.0 Released</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2008/11/15/hide-firefox-popup-menu-2.html" title="Next Post: 隐藏Firefox右键多余菜单">隐藏Firefox右键多余菜单 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2010/05/30/migration-blog-to-jekyll-and-heroku.html">Migration Blog to Jekyll and Heroku</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/05/29/code-highlight-test.html">Code Highlight Test</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/05/21/dont-forget-the-id-column-in-query-with-select-option.html">Don't forget the id column in query with select option</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/05/08/install-ruby-oci8-on-snow-leopard.html">install ruby-oci8 on snow leopard</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/04/26/string-truncate-in-php.html">String truncate in PHP</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Raecoo Cao -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'raecoosblog';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

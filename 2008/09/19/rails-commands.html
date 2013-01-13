@@ -1,0 +1,455 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>rails commands - Nothing Impossible</title>
+  <meta name="author" content="Raecoo Cao">
+
+  
+  <meta name="description" content="rails command list rake db:fixtures:load # 载入fixtures到当前环境的数据库 # 载入指定的fixtures使用FIXTURES=x,y rake db:migrate # 迁移数据库通过在db/migrate目录下的脚本. &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://raecoo.github.com/blog/2008/09/19/rails-commands.html">
+  <link href="/blog/favicon.png" rel="icon">
+  <link href="/blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/blog/javascripts/modernizr-2.0.js"></script>
+  <script src="/blog/javascripts/ender.js"></script>
+  <script src="/blog/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/blog/atom.xml" rel="alternate" title="Nothing Impossible" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/blog/">Nothing Impossible</a></h1>
+  
+    <h2>Focus on Web 2.0, Ruby on Rails, CoffeeScript, BDD … All of the Web Technologies.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/blog/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:raecoo.github.com/blog" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/blog/">Blog</a></li>
+  <li><a href="/blog/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Rails Commands</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-09-19T00:00:00+08:00" pubdate data-updated="true">Sep 19<span>th</span>, 2008</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>rails command list</p>
+
+<h1>rake db:fixtures:load</h1>
+
+<h1># 载入fixtures到当前环境的数据库</h1>
+
+<h1># 载入指定的fixtures使用FIXTURES=x,y</h1>
+
+<h1>rake db:migrate</h1>
+
+<h1># 迁移数据库通过在db/migrate目录下的脚本.可以指定版本号通过VERSION=x</h1>
+
+<h1>rake db:schema:dump</h1>
+
+<h1># 创建一个db/schema.rb文件，通过AR能过够支持任何数据库去使用</h1>
+
+<h1>rake db:schema:load</h1>
+
+<h1># 载入一个schema.rb文件进数据库</h1>
+
+<h1>rake db:sessions:clear</h1>
+
+<h1># 清空sessions表</h1>
+
+<!--more-->
+
+
+<h1>rake db:sessions:create</h1>
+
+<h1># 用CGI::Session::ActiveRecordStore创建一个sessions表为用户</h1>
+
+<h1>rake db:structure:dump</h1>
+
+<h1># 导出数据库结构为一个SQL文件</h1>
+
+<h1>rake db:test:clone</h1>
+
+<h1># 重新创建一个测试数据库从当前环境数据库中</h1>
+
+<h1>rake db:test:clone_structure</h1>
+
+<h1># 重新创建测试数据库从开发模式数据库</h1>
+
+<h1>rake db:test:prepare</h1>
+
+<h1># 准备测试数据库并在入schema</h1>
+
+<h1>rake db:test:purge</h1>
+
+<h1># 清空测试数据库</h1>
+
+<h1>rake doc:app</h1>
+
+<h1># 创建HTML文件的API Documentation</h1>
+
+<h1>rake doc:clobber_app</h1>
+
+<h1># 删除Documentation</h1>
+
+<h1>rake doc:clobber_plugins</h1>
+
+<h1># 删除 plugin Documentation</h1>
+
+<h1>rake doc:clobber_rails</h1>
+
+<h1># 删除Documentation</h1>
+
+<h1>rake doc:plugins</h1>
+
+<h1># 产生Documation为所有安装的plugins</h1>
+
+<h1>rake doc:rails</h1>
+
+<h1># 创建HTML文件的API Documentation</h1>
+
+<h1>rake doc:reapp</h1>
+
+<h1># 强制重新创建HTML文件的API Documentation</h1>
+
+<h1>rake doc:rerails</h1>
+
+<h1># 强制重新创建HTML文件的API Documentation</h1>
+
+<h1>rake log:clear</h1>
+
+<h1># 清空目录log/下的所有日志文件</h1>
+
+<h1>rake rails:freeze:edge</h1>
+
+<h1># Lock this application to latest Edge Rails. Lock a specific revision with REVISION=X</h1>
+
+<h1>rake rails:freeze:gems</h1>
+
+<h1># Lock this application to the current gems (by unpacking them into vendor/rails)</h1>
+
+<h1>rake rails:unfreeze</h1>
+
+<h1># Unlock this application from freeze of gems or edge and return to a fluid use of system gems</h1>
+
+<h1>rake rails:update</h1>
+
+<h1># Update both scripts and public/javascripts from Rails</h1>
+
+<h1>rake rails:update:javascripts</h1>
+
+<h1># Update your javascripts from your current rails install</h1>
+
+<h1>rake rails:update:scripts</h1>
+
+<h1># Add new scripts to the application script/ directory</h1>
+
+<h1>rake stats</h1>
+
+<h1># Report code statistics (KLOCs, etc) from the application</h1>
+
+<h1>rake test</h1>
+
+<h1># Test all units and functionals</h1>
+
+<h1>rake test:functionals</h1>
+
+<h1># Run tests for functionalsdb:test:prepare</h1>
+
+<h1>rake test:integration</h1>
+
+<h1># Run tests for integrationdb:test:prepare</h1>
+
+<h1>rake test:plugins</h1>
+
+<h1># Run tests for pluginsenvironment</h1>
+
+<h1>rake test:recent</h1>
+
+<h1># Run tests for recentdb:test:prepare</h1>
+
+<h1>rake test:uncommitted</h1>
+
+<h1># Run tests for uncommitteddb:test:prepare</h1>
+
+<h1>rake test:units</h1>
+
+<h1># Run tests for unitsdb:test:prepare</h1>
+
+<h1>rake tmp:cache:clear</h1>
+
+<h1># 清空tmp/cache目录下的所有文件</h1>
+
+<h1>rake tmp:clear</h1>
+
+<h1># 清空session, cache, 和socket文件从tmp/目录</h1>
+
+<h1>rake tmp:create</h1>
+
+<h1># 为sessions, cache, and sockets创建tmp/目录</h1>
+
+<h1>rake tmp:sessions:clear</h1>
+
+<h1># 清空所有在tmp/sessions目录下的文件</h1>
+
+<h1>rake tmp:sockets:clear</h1>
+
+<h1># 清空所有在tmp/sessions 目录下的ruby_sess.* 文件</h1>
+
+<h1>script/about</h1>
+
+<h1># 输出当前环境信息</h1>
+
+<h1>script/breakpointer</h1>
+
+<h1># 启动断点server</h1>
+
+<h1>script/console</h1>
+
+<h1># 启动交换式的Rails控制台</h1>
+
+<h1>script/destroy</h1>
+
+<h1># 删除通过generators创建的文件</h1>
+
+<h1>script/generate</h1>
+
+<h1># -> generators</h1>
+
+<h1>script/plugin</h1>
+
+<h1># -> Plugins</h1>
+
+<h1>script/runner</h1>
+
+<h1># 执行一个任务在rails上下文中</h1>
+
+<h1>script/server</h1>
+
+<h1># 启动开发模式服务器http://localhost:3000</h1>
+
+<h1>ruby script/generate model ModelName</h1>
+
+<h1>ruby script/generate controller ListController show edit</h1>
+
+<h1>ruby script/generate scaffold ModelName ControllerName</h1>
+
+<h1>ruby script/generate migration AddNewTable</h1>
+
+<h1>ruby script/generate plugin PluginName</h1>
+
+<h1>ruby script/generate mailer Notification lost_password signup</h1>
+
+<h1>ruby script/generate web_service ServiceName api_one api_two</h1>
+
+<h1>ruby script/generate integration_test TestName</h1>
+
+<h1>ruby script/generate session_migration</h1>
+
+<h1>可选项:</h1>
+
+<h1>-p, &#8211;pretend Run but do not make any changes.</h1>
+
+<h1>-f, &#8211;force Overwrite files that already exist.</h1>
+
+<h1>-s, &#8211;skip Skip files that already exist.</h1>
+
+<h1>-q, &#8211;quiet Suppress normal output.</h1>
+
+<h1>-t, &#8211;backtrace Debugging: show backtrace on errors.</h1>
+
+<h1>-h, &#8211;help Show this help message.</h1>
+
+<h1>-c, &#8211;svn Modify files with subversion. (Note: svn must be in path)</h1>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Raecoo Cao</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-09-19T00:00:00+08:00" pubdate data-updated="true">Sep 19<span>th</span>, 2008</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://raecoo.github.com/blog/2008/09/19/rails-commands.html" data-via="" data-counturl="http://raecoo.github.com/blog/2008/09/19/rails-commands.html" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2008/09/19/multiple-attachments-in-rails.html" title="Previous Post: Multiple Attachments in Rails">&laquo; Multiple Attachments in Rails</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2008/09/19/use-fixture-in-rails-2.html" title="Next Post: use fixture in rails 2">use fixture in rails 2 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2010/05/30/migration-blog-to-jekyll-and-heroku.html">Migration Blog to Jekyll and Heroku</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/05/29/code-highlight-test.html">Code Highlight Test</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/05/21/dont-forget-the-id-column-in-query-with-select-option.html">Don't forget the id column in query with select option</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/05/08/install-ruby-oci8-on-snow-leopard.html">install ruby-oci8 on snow leopard</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2010/04/26/string-truncate-in-php.html">String truncate in PHP</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Raecoo Cao -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'raecoosblog';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

@@ -2,578 +2,608 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>
-            http://raecoo.github.com/blog/2008/09/09/setup-wordpress-permalink-rewirte-in-lighttpd/
+            http://raecoo.github.com/blog/2008/09/09/setup-wordpress-permalink-rewirte-in-lighttpd.html
         </loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
-        <loc>http://raecoo.github.com/blog/2008/09/10/shoes-ruby-gui-toolkit/</loc>
+        <loc>http://raecoo.github.com/blog/2008/09/10/shoes-ruby-gui-toolkit.html</loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
-        <loc>http://raecoo.github.com/blog/2008/09/11/hide-firefox-popup-menu/</loc>
+        <loc>http://raecoo.github.com/blog/2008/09/11/hide-firefox-popup-menu.html</loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
-        <loc>http://raecoo.github.com/blog/2008/09/16/mysql-slow-log-analytics-tools/</loc>
+        <loc>http://raecoo.github.com/blog/2008/09/16/mysql-slow-log-analytics-tools.html</loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
-        <loc>http://raecoo.github.com/blog/2008/09/17/php-code-style/</loc>
+        <loc>http://raecoo.github.com/blog/2008/09/17/php-code-style.html</loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
-        <loc>http://raecoo.github.com/blog/2008/09/18/each-code-for-http-status/</loc>
+        <loc>http://raecoo.github.com/blog/2008/09/18/each-code-for-http-status.html</loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
         <loc>
-            http://raecoo.github.com/blog/2008/09/18/very-interesting-describe-about-chinese-developer/
+            http://raecoo.github.com/blog/2008/09/18/very-interesting-describe-about-chinese-developer.html
         </loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
-        <loc>http://raecoo.github.com/blog/2008/09/19/multiple-attachments-in-rails/</loc>
+        <loc>http://raecoo.github.com/blog/2008/09/19/multiple-attachments-in-rails.html</loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
-        <loc>http://raecoo.github.com/blog/2008/09/19/rails-commands/</loc>
+        <loc>http://raecoo.github.com/blog/2008/09/19/rails-commands.html</loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
-        <loc>http://raecoo.github.com/blog/2008/09/19/use-fixture-in-rails-2/</loc>
+        <loc>http://raecoo.github.com/blog/2008/09/19/use-fixture-in-rails-2.html</loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
-        <loc>http://raecoo.github.com/blog/2008/10/09/how-to-use-ruby-invoke-remote-url/</loc>
+        <loc>http://raecoo.github.com/blog/2008/10/09/how-to-use-ruby-invoke-remote-url.html</loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
-        <loc>http://raecoo.github.com/blog/2008/10/25/rails-store-format-in-memcache/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://raecoo.github.com/blog/2008/10/31/ruby-email-validation-regex-expression/
-        </loc>
+        <loc>http://raecoo.github.com/blog/2008/10/25/rails-store-format-in-memcache.html</loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
         <loc>
-            http://raecoo.github.com/blog/2008/11/03/design-elements-of-next-generation-web-20-application/
-        </loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2008/11/04/thinking-sphinx-on-windows/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://raecoo.github.com/blog/2008/11/04/use-fastri-to-increase-the-speed-of-ruby-ri/
-        </loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2008/11/08/backup-mysql-data-from-remote/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2008/11/08/use-scp-copy-remote-files/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2008/11/09/change-mysql-characters-to-utf8/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://raecoo.github.com/blog/2008/11/09/exclusive-sound-card-solution-for-ubuntu/
-        </loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2008/11/09/flash10-no-sound-on-ubuntu/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2008/11/09/merb-10-released/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2008/11/10/install-merb-10-on-windows/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2008/11/15/hide-firefox-popup-menu-2/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://raecoo.github.com/blog/2008/11/20/comparison-of-common-command-with-rails-and-merb/
-        </loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2008/12/09/controller-text-by-css/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2008/12/14/fix-skype-no-sound-in-ubuntu-810/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2008/12/15/use-net_https-lib-post-http-request/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2008/12/16/fix-chinese-in-flash-on-ubuntu/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2008/12/17/upgrade-merb-cause-nothing-to-render/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2008/12/21/custom-linux-shell-prompt/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2008/12/21/remove-wine_ies4linux-linux/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2008/12/25/http-authentication/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2008/12/25/process-base64-encode-in-ruby/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://raecoo.github.com/blog/2008/12/26/hack-truncate-in-ruby-187-compability-issue/
-        </loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2008/12/27/custom-exceptions-in-merb/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2008/12/28/add-hover-effect-for-all-html-tags/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/01/11/vform-javascript-form-validation-util/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/01/12/fix-pidgin-can-not-connect-to-msn/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://raecoo.github.com/blog/2009/01/13/add-hasattribute-and-indexof-in-javascript-on-ie/
-        </loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/01/16/cheat-datamapper/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/01/16/fix-cant-use-2-in-fcitx/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/01/16/install-libmemcached-and-memcached/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/01/17/snapshots-tool-scrot/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/01/17/use-mysql-memory-table-in-datamapper/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/01/18/common-methods-on-ruby-int/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://raecoo.github.com/blog/2009/02/08/deploy-merb-or-rails-applicaitons-with-nginx-and-fastcgi/
-        </loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/02/09/install-or-remove-software-on-ubuntu/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/02/16/install-rmagick-on-debian/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/02/16/vim-config-file/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://raecoo.github.com/blog/2009/02/18/deploy-rails-application-with-git-capistrano/
-        </loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/02/18/linux-command-collections/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://raecoo.github.com/blog/2009/02/20/install-ruby-on-rails-environment-on-ubuntu/
-        </loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/02/25/twitter-client-for-gnome/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/03/06/8-advices-for-product-manager/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/03/18/need-public-signing-key/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://raecoo.github.com/blog/2009/03/24/merge-terminal-window-in-ubuntu-with-terminator/
+            http://raecoo.github.com/blog/2008/10/31/ruby-email-validation-regex-expression.html
         </loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
         <loc>
-            http://raecoo.github.com/blog/2009/04/01/require-load-include-extend-the-different-in-ruby/
+            http://raecoo.github.com/blog/2008/11/03/design-elements-of-next-generation-web-20-application.html
         </loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
-        <loc>http://raecoo.github.com/blog/2009/04/04/20-rails-development-no/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/04/17/install-sphinx-on-centos/</loc>
+        <loc>http://raecoo.github.com/blog/2008/11/04/thinking-sphinx-on-windows.html</loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
         <loc>
-            http://raecoo.github.com/blog/2009/04/17/install-the-mysqlruby-adapter-on-leopard/
+            http://raecoo.github.com/blog/2008/11/04/use-fastri-to-increase-the-speed-of-ruby-ri.html
         </loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
-        <loc>http://raecoo.github.com/blog/2009/04/22/operation-mysql-in-ruby-script/</loc>
+        <loc>http://raecoo.github.com/blog/2008/11/08/backup-mysql-data-from-remote.html</loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
-        <loc>http://raecoo.github.com/blog/2009/04/30/install-memcached-on-linux/</loc>
+        <loc>http://raecoo.github.com/blog/2008/11/08/use-scp-copy-remote-files.html</loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
-        <loc>http://raecoo.github.com/blog/2009/05/11/sharing-session-in-many-rails-app/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/05/12/deployed-rails-apps-in-subdirectory/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/05/29/comment-multi-lines-code-in-vim/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/06/02/fix-mongrel-prefix-in-rails-2-3-2/</loc>
+        <loc>http://raecoo.github.com/blog/2008/11/09/change-mysql-characters-to-utf8.html</loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
         <loc>
-            http://raecoo.github.com/blog/2009/06/11/deploy-rails-apps-with-apache2-passenger-on-ubuntu/
+            http://raecoo.github.com/blog/2008/11/09/exclusive-sound-card-solution-for-ubuntu.html
         </loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
+        <loc>http://raecoo.github.com/blog/2008/11/09/flash10-no-sound-on-ubuntu.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2008/11/09/merb-10-released.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2008/11/10/install-merb-10-on-windows.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2008/11/15/hide-firefox-popup-menu-2.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
         <loc>
-            http://raecoo.github.com/blog/2009/06/26/simplify-invoke-of-the-rails-i18n-method/
+            http://raecoo.github.com/blog/2008/11/20/comparison-of-common-command-with-rails-and-merb.html
         </loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
-        <loc>http://raecoo.github.com/blog/2009/06/27/css-radius/</loc>
+        <loc>http://raecoo.github.com/blog/2008/12/09/controller-text-by-css.html</loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
-        <loc>http://raecoo.github.com/blog/2009/07/01/send-email-by-gmail-in-rails-app/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/07/04/basic-auth-on-sinatra/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/07/05/defined-table-object-in-cucumber/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/07/05/practice-bdd-with-cucumber/</loc>
+        <loc>http://raecoo.github.com/blog/2008/12/14/fix-skype-no-sound-in-ubuntu-810.html</loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
         <loc>
-            http://raecoo.github.com/blog/2009/07/06/agile-development-of-five-misunderstanding/
+            http://raecoo.github.com/blog/2008/12/15/use-net_https-lib-post-http-request.html
         </loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
+        <loc>http://raecoo.github.com/blog/2008/12/16/fix-chinese-in-flash-on-ubuntu.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
         <loc>
-            http://raecoo.github.com/blog/2009/07/13/flexible-apply-the-rails-environment-file/
+            http://raecoo.github.com/blog/2008/12/17/upgrade-merb-cause-nothing-to-render.html
         </loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
-        <loc>http://raecoo.github.com/blog/2009/07/24/inject-folder-references-for-textmate/</loc>
+        <loc>http://raecoo.github.com/blog/2008/12/21/custom-linux-shell-prompt.html</loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
-        <loc>http://raecoo.github.com/blog/2009/07/24/install-bundle-for-textmate/</loc>
+        <loc>http://raecoo.github.com/blog/2008/12/21/remove-wine_ies4linux-linux.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2008/12/25/http-authentication.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2008/12/25/process-base64-encode-in-ruby.html</loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
         <loc>
-            http://raecoo.github.com/blog/2009/07/28/fix-cant-found-identify-command-with-paperclip/
+            http://raecoo.github.com/blog/2008/12/26/hack-truncate-in-ruby-187-compability-issue.html
         </loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://raecoo.github.com/blog/2009/07/29/rails-app-cant-write-log-file-within-passenger/
-        </loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/07/29/uninstall-gem-in-leopard/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/07/29/validate-telphone-and-mobile-in-rails/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/07/30/custom-shell-commands/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/08/01/centos-53-yum-sources-in-china/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/08/04/less-and-tail/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/08/07/global-git-config-file/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/08/07/install-ruby-readline-on-centos/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/08/09/lita-sqlite-client-based-on-air/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/08/10/rails-internal-middleware-stack/</loc>
+        <loc>http://raecoo.github.com/blog/2008/12/27/custom-exceptions-in-merb.html</loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
         <loc>
-            http://raecoo.github.com/blog/2009/08/14/operation-excel-in-ruby-by-spreadsheet/
-        </loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/08/31/use-mechanize-parse-google-music/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/09/10/china-region-list/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://raecoo.github.com/blog/2009/09/10/flexibility-in-the-use-activerecords-autosave-association/
-        </loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/09/15/transfer-domain-to-godaddy/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/09/16/html-latin-special-characters/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/09/17/include-extends-ruby/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/10/11/ten-things-should-be-done/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/10/13/jquery-slider-plugins/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://raecoo.github.com/blog/2009/10/14/add-chinese-support-for-thinking_sphinx/
-        </loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/10/14/use-javascript-auto-resize-image/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://raecoo.github.com/blog/2009/10/14/use-unit_png_fix-js-fix-ie6-pnd-transparent/
+            http://raecoo.github.com/blog/2008/12/28/add-hover-effect-for-all-html-tags.html
         </loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
         <loc>
-            http://raecoo.github.com/blog/2009/10/14/using-the-ewindow-extension-google-map-bubble/
+            http://raecoo.github.com/blog/2009/01/11/vform-javascript-form-validation-util.html
         </loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
-        <loc>http://raecoo.github.com/blog/2009/10/21/hui-guo-rou/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/10/26/running-map/</loc>
+        <loc>http://raecoo.github.com/blog/2009/01/12/fix-pidgin-can-not-connect-to-msn.html</loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
         <loc>
-            http://raecoo.github.com/blog/2009/10/28/remove-blank-line-and-comment-code-in-ruby/
+            http://raecoo.github.com/blog/2009/01/13/add-hasattribute-and-indexof-in-javascript-on-ie.html
         </loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
-        <loc>http://raecoo.github.com/blog/2009/11/05/hellow-typecho/</loc>
+        <loc>http://raecoo.github.com/blog/2009/01/16/cheat-datamapper.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2009/01/16/fix-cant-use-2-in-fcitx.html</loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
         <loc>
-            http://raecoo.github.com/blog/2009/11/06/jaml-a-new-template-engine-of-javascript/
+            http://raecoo.github.com/blog/2009/01/16/install-libmemcached-and-memcached.html
         </loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
-        <loc>http://raecoo.github.com/blog/2009/11/09/garlic-and-catfish/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/11/09/open-source-mirrors-in-china/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/11/19/create-new-repository-based-gitosis/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/11/19/install-ffmpeg-on-centos/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/11/23/get-gps-position-from-image-by-ruby/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/11/24/use-ruby-retrieving-gmail-via-pop3/</loc>
+        <loc>http://raecoo.github.com/blog/2009/01/17/snapshots-tool-scrot.html</loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
         <loc>
-            http://raecoo.github.com/blog/2009/11/25/fix-passenger-the-application-spawner-exception/
+            http://raecoo.github.com/blog/2009/01/17/use-mysql-memory-table-in-datamapper.html
+        </loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2009/01/18/common-methods-on-ruby-int.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://raecoo.github.com/blog/2009/02/08/deploy-merb-or-rails-applicaitons-with-nginx-and-fastcgi.html
         </loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
         <loc>
-            http://raecoo.github.com/blog/2009/12/01/enabled-web-development-tool-on-safari-4/
+            http://raecoo.github.com/blog/2009/02/09/install-or-remove-software-on-ubuntu.html
         </loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
-        <loc>http://raecoo.github.com/blog/2009/12/04/fancy-buttons/</loc>
+        <loc>http://raecoo.github.com/blog/2009/02/16/install-rmagick-on-debian.html</loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
-        <loc>http://raecoo.github.com/blog/2009/12/04/use-960-gs-on-rails-application/</loc>
+        <loc>http://raecoo.github.com/blog/2009/02/16/vim-config-file.html</loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
         <loc>
-            http://raecoo.github.com/blog/2009/12/09/using-postfix-with-courier-and-mysql-on-debian/
+            http://raecoo.github.com/blog/2009/02/18/deploy-rails-application-with-git-capistrano.html
         </loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
-        <loc>http://raecoo.github.com/blog/2009/12/18/authlogic-validates-message-i18n/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2009/12/27/format-date-in-ruby/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2010/01/13/upgrade-leopard-java-to-1-6-x/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2010/03/27/debugger-for-flash-and-air/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2010/04/02/introduction-explain-command-of-mysql/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2010/04/26/string-truncate-in-php/</loc>
-        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
-    </url>
-    <url>
-        <loc>http://raecoo.github.com/blog/2010/05/08/install-ruby-oci8-on-snow-leopard/</loc>
+        <loc>http://raecoo.github.com/blog/2009/02/18/linux-command-collections.html</loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
         <loc>
-            http://raecoo.github.com/blog/2010/05/21/dont-forget-the-id-column-in-query-with-select-option/
+            http://raecoo.github.com/blog/2009/02/20/install-ruby-on-rails-environment-on-ubuntu.html
         </loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
-        <loc>http://raecoo.github.com/blog/2010/05/29/code-highlight-test/</loc>
+        <loc>http://raecoo.github.com/blog/2009/02/25/twitter-client-for-gnome.html</loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
-        <loc>http://raecoo.github.com/blog/2010/05/30/migration-blog-to-jekyll-and-heroku/</loc>
+        <loc>http://raecoo.github.com/blog/2009/03/06/8-advices-for-product-manager.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2009/03/18/need-public-signing-key.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://raecoo.github.com/blog/2009/03/24/merge-terminal-window-in-ubuntu-with-terminator.html
+        </loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://raecoo.github.com/blog/2009/04/01/require-load-include-extend-the-different-in-ruby.html
+        </loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2009/04/04/20-rails-development-no.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2009/04/17/install-sphinx-on-centos.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://raecoo.github.com/blog/2009/04/17/install-the-mysqlruby-adapter-on-leopard.html
+        </loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2009/04/22/operation-mysql-in-ruby-script.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2009/04/30/install-memcached-on-linux.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2009/05/11/sharing-session-in-many-rails-app.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://raecoo.github.com/blog/2009/05/12/deployed-rails-apps-in-subdirectory.html
+        </loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2009/05/29/comment-multi-lines-code-in-vim.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2009/06/02/fix-mongrel-prefix-in-rails-2-3-2.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://raecoo.github.com/blog/2009/06/11/deploy-rails-apps-with-apache2-passenger-on-ubuntu.html
+        </loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://raecoo.github.com/blog/2009/06/26/simplify-invoke-of-the-rails-i18n-method.html
+        </loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2009/06/27/css-radius.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2009/07/01/send-email-by-gmail-in-rails-app.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2009/07/04/basic-auth-on-sinatra.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2009/07/05/defined-table-object-in-cucumber.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2009/07/05/practice-bdd-with-cucumber.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://raecoo.github.com/blog/2009/07/06/agile-development-of-five-misunderstanding.html
+        </loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://raecoo.github.com/blog/2009/07/13/flexible-apply-the-rails-environment-file.html
+        </loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://raecoo.github.com/blog/2009/07/24/inject-folder-references-for-textmate.html
+        </loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2009/07/24/install-bundle-for-textmate.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://raecoo.github.com/blog/2009/07/28/fix-cant-found-identify-command-with-paperclip.html
+        </loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://raecoo.github.com/blog/2009/07/29/rails-app-cant-write-log-file-within-passenger.html
+        </loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2009/07/29/uninstall-gem-in-leopard.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://raecoo.github.com/blog/2009/07/29/validate-telphone-and-mobile-in-rails.html
+        </loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2009/07/30/custom-shell-commands.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2009/08/01/centos-53-yum-sources-in-china.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2009/08/04/less-and-tail.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2009/08/07/global-git-config-file.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2009/08/07/install-ruby-readline-on-centos.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2009/08/09/lita-sqlite-client-based-on-air.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2009/08/10/rails-internal-middleware-stack.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://raecoo.github.com/blog/2009/08/14/operation-excel-in-ruby-by-spreadsheet.html
+        </loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2009/08/31/use-mechanize-parse-google-music.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2009/09/10/china-region-list.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://raecoo.github.com/blog/2009/09/10/flexibility-in-the-use-activerecords-autosave-association.html
+        </loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2009/09/15/transfer-domain-to-godaddy.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2009/09/16/html-latin-special-characters.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2009/09/17/include-extends-ruby.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2009/10/11/ten-things-should-be-done.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2009/10/13/jquery-slider-plugins.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://raecoo.github.com/blog/2009/10/14/add-chinese-support-for-thinking_sphinx.html
+        </loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2009/10/14/use-javascript-auto-resize-image.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://raecoo.github.com/blog/2009/10/14/use-unit_png_fix-js-fix-ie6-pnd-transparent.html
+        </loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://raecoo.github.com/blog/2009/10/14/using-the-ewindow-extension-google-map-bubble.html
+        </loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2009/10/21/hui-guo-rou.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2009/10/26/running-map.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://raecoo.github.com/blog/2009/10/28/remove-blank-line-and-comment-code-in-ruby.html
+        </loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2009/11/05/hellow-typecho.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://raecoo.github.com/blog/2009/11/06/jaml-a-new-template-engine-of-javascript.html
+        </loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2009/11/09/garlic-and-catfish.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2009/11/09/open-source-mirrors-in-china.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://raecoo.github.com/blog/2009/11/19/create-new-repository-based-gitosis.html
+        </loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2009/11/19/install-ffmpeg-on-centos.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://raecoo.github.com/blog/2009/11/23/get-gps-position-from-image-by-ruby.html
+        </loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://raecoo.github.com/blog/2009/11/24/use-ruby-retrieving-gmail-via-pop3.html
+        </loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://raecoo.github.com/blog/2009/11/25/fix-passenger-the-application-spawner-exception.html
+        </loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://raecoo.github.com/blog/2009/12/01/enabled-web-development-tool-on-safari-4.html
+        </loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2009/12/04/fancy-buttons.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2009/12/04/use-960-gs-on-rails-application.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://raecoo.github.com/blog/2009/12/09/using-postfix-with-courier-and-mysql-on-debian.html
+        </loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2009/12/18/authlogic-validates-message-i18n.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2009/12/27/format-date-in-ruby.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2010/01/13/upgrade-leopard-java-to-1-6-x.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2010/03/27/debugger-for-flash-and-air.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://raecoo.github.com/blog/2010/04/02/introduction-explain-command-of-mysql.html
+        </loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2010/04/26/string-truncate-in-php.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2010/05/08/install-ruby-oci8-on-snow-leopard.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://raecoo.github.com/blog/2010/05/21/dont-forget-the-id-column-in-query-with-select-option.html
+        </loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://raecoo.github.com/blog/2010/05/29/code-highlight-test.html</loc>
+        <lastmod>2013-01-13T16:22:00+08:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://raecoo.github.com/blog/2010/05/30/migration-blog-to-jekyll-and-heroku.html
+        </loc>
         <lastmod>2013-01-13T16:22:00+08:00</lastmod>
     </url>
     <url>
